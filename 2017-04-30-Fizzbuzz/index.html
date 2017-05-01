@@ -63,8 +63,8 @@
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="https://sleepy-dev-blog.firebaseapp.com//2017-04-30-Fizzbuzz/" />
-  <link rel="canonical" href="https://sleepy-dev-blog.firebaseapp.com//2017-04-30-Fizzbuzz/" />
+  <meta property="og:url" content="http://sleepydev.tk/2017-04-30-Fizzbuzz/" />
+  <link rel="canonical" href="http://sleepydev.tk/2017-04-30-Fizzbuzz/" />
   
 
   
@@ -102,7 +102,7 @@
         <span class="icon-bar"></span>
       </button>
       
-        <a class="navbar-brand" href="https://sleepy-dev-blog.firebaseapp.com/">Sleepy Dev's Blog</a>
+        <a class="navbar-brand" href="http://sleepydev.tk">Sleepy Dev's Blog</a>
       
     </div>
 
@@ -236,15 +236,15 @@
 
 <p>A standard simple solution to Fizzbuzz is given below in python:</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span> <span class="c">#loop through numbers 1 to 100</span>
     <span class="k">if</span> <span class="p">((</span><span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)):</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"fizzbuzz"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"fizzbuzz"</span><span class="p">)</span> <span class="c">#if number is divisible by 3 and 5 print fizzbuzz</span>
     <span class="k">elif</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"fizz"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"fizz"</span><span class="p">)</span> <span class="c">#else if number is divisible by 3 print fizz </span>
     <span class="k">elif</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"buzz"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"buzz"</span><span class="p">)</span> <span class="c">#else if number is divisible by 5 print buzz</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c">#else print the number</span>
 	
 </code></pre>
 </div>
@@ -261,11 +261,11 @@
 
 <span class="n">output_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s">""</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="s">"fizz"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="s">"buzz"</span><span class="p">,</span>
     <span class="s">"fizz"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="s">"fizz"</span><span class="p">,</span> <span class="s">"buzz"</span><span class="p">,</span>
-    <span class="s">""</span><span class="p">,</span> <span class="s">"fizz"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="s">"buzz"</span><span class="p">,</span> <span class="s">"fizzbuzz"</span><span class="p">]</span>		
+    <span class="s">""</span><span class="p">,</span> <span class="s">"fizz"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="s">"buzz"</span><span class="p">,</span> <span class="s">"fizzbuzz"</span><span class="p">]</span>	<span class="c">#list containing the possible values for 1 to 15	</span>
 
 
 <span class="k">for</span> <span class="n">i</span> <span class="n">on</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
-	<span class="n">check</span><span class="p">(</span><span class="n">output_list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">i</span><span class="p">)</span>    
+	<span class="n">check</span><span class="p">(</span><span class="n">output_list</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="mi">15</span><span class="p">],</span><span class="n">i</span><span class="p">)</span>    
 	
 </code></pre>
 </div>
@@ -294,7 +294,7 @@
 
   
   <!--- Share on Twitter -->
-    <a href="https://twitter.com/intent/tweet?text=A+little+about+FizzBuzz+https://sleepy-dev-blog.firebaseapp.com//2017-04-30-Fizzbuzz/"
+    <a href="https://twitter.com/intent/tweet?text=A+little+about+FizzBuzz+http://sleepydev.tk/2017-04-30-Fizzbuzz/"
       class="btn btn-social-icon btn-twitter" title="Share on Twitter">
       <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
       <span class="sr-only">Twitter</span>
@@ -303,7 +303,7 @@
 
   
   <!--- Share on Facebook -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://sleepy-dev-blog.firebaseapp.com//2017-04-30-Fizzbuzz/"
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://sleepydev.tk/2017-04-30-Fizzbuzz/"
       class="btn btn-social-icon btn-facebook" title="Share on Facebook">
       <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
       <span class="sr-only">Facebook</span>
@@ -314,7 +314,7 @@
 
   
   <!--- Share on LinkedIn -->
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://sleepy-dev-blog.firebaseapp.com//2017-04-30-Fizzbuzz/"
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://sleepydev.tk/2017-04-30-Fizzbuzz/"
       class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
       <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
       <span class="sr-only">LinkedIn</span>
